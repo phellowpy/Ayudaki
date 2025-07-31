@@ -6,7 +6,7 @@ def exibir_configuracoes(usuario):
     print(f"3. Nome de Perfil: {usuario['nome_perfil']}")
     print(f"4. E-mail: {usuario['email']}")
     print(f"5. Telefone: {usuario['telefone']}")
-    print(f"6. Senha: {'*' * len(usuario['senha'])}") # Mostra a senha mascarada
+    print(f"6. Senha: {'*' * len(usuario['senha'])}") 
     print("--------------------------")
 
 def alterar_configuracoes(usuario):
@@ -40,7 +40,6 @@ def alterar_configuracoes(usuario):
         else:
             print("Opção inválida. Por favor, digite 's' para sim ou 'n' para não.")
 
-# Dados predefinidos da conta
 minha_conta = {
     'foto_perfil': 'avatar_padrao.png',
     'nome_usuario': 'usuario_ayuda',
