@@ -1,12 +1,8 @@
-# --- Usuários Disponíveis por Padrão ---
-# 1. Admin: e-mail: admin@doacoes.com, senha: 123 (Esta conta não pode ser desconectada pelo usuário.)
+# 1. Admin: e-mail: admin@doacoes.com, senha: 123
 # 2. Usuário Normal: e-mail: joao@email.com, senha: abc
 # 3. ONG: e-mail: ong@doacoes.com, senha: xyz
 
 import datetime
-
-# --- Dados do Sistema (Armazenamento Simulado) ---
-# Usaremos listas e dicionários para simular um banco de dados simples.
 
 contas = [
     {"username": "admin", "nome_perfil": "Administrador Geral", "email": "admin@doacoes.com", "senha": "123", "telefone": "999999999", "tipo": "admin"},
@@ -23,13 +19,10 @@ campanhas = [
 proximo_id_campanha = 4
 conta_logada = None
 
-# --- Funções Auxiliares de Validação ---
-
 def obter_inteiro(prompt):
     while True:
         try:
             valor = input(prompt)
-            # Verifica se a string contém apenas dígitos antes de converter
             if not valor.isdigit():
                 raise ValueError
             return int(valor)
@@ -42,9 +35,7 @@ def obter_flutuante(prompt):
             return float(input(prompt))
         except ValueError:
             print("\nEntrada inválida. Por favor, digite um valor numérico válido (ex: 100.00).")
-
-# --- Funções do Sistema ---
-
+        
 def exibir_menu_principal():
     print("\n--- Menu Principal ---")
     print("1. Fazer Login")
@@ -75,7 +66,6 @@ def cadastrar_conta():
     nome_perfil = input("Nome de perfil: ")
     email = input("E-mail: ")
 
-    # Loop para garantir que o e-mail não seja duplicado
     while True:
         email_valido = True
         for conta in contas:
@@ -85,11 +75,9 @@ def cadastrar_conta():
                 break
         if email_valido:
             break
-        email = input("E-mail: ") # Solicita o e-mail novamente se for inválido
-
+        email = input("E-mail: ") 
     senha = input("Senha: ")
     
-    # Valida que o telefone seja um número inteiro
     telefone = str(obter_inteiro("Telefone (apenas números): "))
 
     nova_conta = {
@@ -98,7 +86,7 @@ def cadastrar_conta():
         "email": email,
         "senha": senha,
         "telefone": telefone,
-        "tipo": "normal"  # Por padrão, novas contas são de usuário normal
+        "tipo": "normal"  
     }
     contas.append(nova_conta)
     print("\nConta cadastrada com sucesso! Agora você pode fazer login.")
@@ -163,7 +151,7 @@ def doar_para_campanha():
         print(f"Arrecadado: R$ {campanha['valor_arrecadado']:.2f} / Estimado: R$ {campanha['valor_estimado']:.2f}")
         print("-" * 30)
 
-    # Loop para garantir que o ID da campanha exista
+
     while True:
         id_campanha = obter_inteiro("Digite o ID da campanha para a qual deseja doar: ")
         campanha_encontrada = None
@@ -173,11 +161,11 @@ def doar_para_campanha():
                 break
         
         if campanha_encontrada:
-            break # ID válido e campanha encontrada, sai do loop
+            break 
         else:
             print("\nID de campanha inválido ou não encontrado. Verifique o ID e digite novamente.")
 
-    # Loop para garantir que o valor da doação seja positivo
+
     while True:
         valor_doacao = obter_flutuante("Digite o valor que deseja doar: R$ ")
         if valor_doacao > 0:
@@ -268,7 +256,7 @@ def gerenciar_minhas_campanhas():
         escolha = obter_inteiro("Escolha uma opção: ")
 
         if escolha == 1:
-            # Loop para garantir que o ID da campanha exista e pertença à ONG
+
             while True:
                 id_campanha = obter_inteiro("Digite o ID da campanha para retirar o valor: ")
                 campanha_selecionada = None
@@ -278,31 +266,27 @@ def gerenciar_minhas_campanhas():
                         break
                 
                 if campanha_selecionada:
-                    break # ID válido e campanha encontrada, sai do loop
+                    break 
                 else:
                     print("\nID de campanha inválido ou a campanha não pertence a você. Digite novamente.")
 
-            # Loop para garantir que o valor a ser retirado seja válido
             while True:
                 valor_retirar = obter_flutuante("Digite o valor a ser retirado: R$ ")
                 if valor_retirar <= 0:
                     print("\nO valor a ser retirado deve ser positivo. Digite novamente.")
                 elif valor_retirar > campanha_selecionada["valor_arrecadado"]:
-                    # Pegamos o valor arrecadado atualizado diretamente da lista global
                     current_arrecadado = next((c['valor_arrecadado'] for c in campanhas if c['id'] == campanha_selecionada['id']), 0)
                     print(f"\nNão é possível retirar R$ {valor_retirar:.2f}. Saldo atual: R$ {current_arrecadado:.2f}. Digite novamente.")
                 else:
-                    # Atualiza diretamente na lista global de campanhas
                     for c in campanhas:
                         if c["id"] == campanha_selecionada["id"]:
                             c["valor_arrecadado"] -= valor_retirar
                             print(f"\nRetirada de R$ {valor_retirar:.2f} realizada com sucesso da campanha '{c['nome']}'.")
                             print(f"Novo valor arrecadado: R$ {c['valor_arrecadado']:.2f}")
                             break
-                    break # Sai do loop de validação do valor
+                    break 
 
         elif escolha == 2:
-            # Loop para garantir que o ID da campanha exista e pertença à ONG para apagar
             while True:
                 id_campanha = obter_inteiro("Digite o ID da campanha que deseja apagar: ")
                 campanha_para_apagar = None
@@ -315,11 +299,10 @@ def gerenciar_minhas_campanhas():
                         break
                 
                 if campanha_para_apagar:
-                    break # ID válido e campanha encontrada, sai do loop
+                    break 
                 else:
                     print("\nID de campanha inválido ou a campanha não pertence a você. Digite novamente.")
 
-            # Loop para garantir a confirmação (s/n)
             while True:
                 confirmacao = input(f"Tem certeza que deseja apagar a campanha '{campanha_para_apagar['nome']}'? (s/n): ").lower()
                 if confirmacao in ['s', 'n']:
@@ -330,7 +313,6 @@ def gerenciar_minhas_campanhas():
             if confirmacao == 's':
                 campanhas.pop(index_para_apagar)
                 print(f"\nCampanha '{campanha_para_apagar['nome']}' apagada com sucesso.")
-                # Atualiza a lista local de 'minhas_campanhas' após a exclusão
                 minhas_campanhas = [c for c in campanhas if c["criador_email"] == conta_logada["email"]] 
             else:
                 print("\nOperação de apagar campanha cancelada.")
@@ -356,7 +338,6 @@ def menu_admin():
     else:
         print("\nOpção inválida. Tente novamente.")
 
-# --- Loop Principal do Sistema ---
 def iniciar_sistema():
     while True:
         exibir_menu_principal()
@@ -381,6 +362,5 @@ def iniciar_sistema():
         else:
             print("\nOpção inválida ou ação não permitida no momento. Tente novamente.")
 
-# Iniciar o sistema
 if __name__ == "__main__":
     iniciar_sistema()
