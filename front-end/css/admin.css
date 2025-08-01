@@ -1,0 +1,24 @@
+/* admin.css pode conter estilos que diferenciam a UI para ONGs, como menus adicionais ou layouts */
+/* Por enquanto, ele pode se basear em style.css e campanhas.css, mas é bom ter para futuras customizações. */
+/* Exemplo de um estilo extra para um painel de controle de admin/ong */
+.admin-panel {
+    background-color: #e6ffe6; /* Um verde claro */
+    border: 1px solid #a3e6a3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.admin-panel h3 {
+    color: #2e8b57;
+}
+
+/* Tema escuro para admin panel */
+.dark-mode .admin-panel {
+    background-color: #3a473f;
+    border-color: #4a6652;
+}
+
+.dark-mode .admin-panel h3 {
+    color: #a3e6a3;
+}

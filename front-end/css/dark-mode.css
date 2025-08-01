@@ -1,0 +1,130 @@
+/* front-end/css/dark-mode.css */
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+.dark-mode header {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode header h1 {
+    color: #eee;
+}
+
+.dark-mode nav ul li a {
+    color: #ddd;
+}
+
+.dark-mode nav ul li a:hover {
+    color: #bbb;
+}
+
+.dark-mode .theme-toggle-button {
+    color: #FFD54F; /* Cor do ícone no tema escuro */
+}
+
+.dark-mode main .container,
+.dark-mode .info-card,
+.dark-mode .modal-content {
+    background-color: #2b2b2b;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode h2,
+.dark-mode .info-section h3 {
+    color: #66bb6a;
+}
+
+.dark-mode .form-group label {
+    color: #ccc;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea,
+.dark-mode .form-group select,
+.dark-mode .modal input[type="number"] {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    color: #f5f5f5;
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group textarea:focus,
+.dark-mode .form-group select:focus {
+    border-color: #66bb6a;
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+.dark-mode .button {
+    background-color: #66bb6a;
+    color: #1a1a1a;
+}
+
+.dark-mode .button:hover {
+    background-color: #5cb85c;
+}
+
+.dark-mode footer {
+    background-color: #222;
+    color: #bbb;
+}
+
+.dark-mode .hero {
+    background: linear-gradient(to right, #0a3a4a, #0d5d7a);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .hero .button {
+    background-color: #FFD54F;
+    color: #333;
+}
+
+.dark-mode .hero .button:hover {
+    background-color: #e0a800;
+}
+
+.dark-mode .info-card h4 {
+    color: #6dd5ed;
+}
+
+.dark-mode .info-card p {
+    color: #ccc;
+}
+
+.dark-mode .message.error {
+    background-color: #5c2227;
+    color: #f8d7da;
+    border-color: #721c24;
+}
+
+.dark-mode .message.success {
+    background-color: #2a5231;
+    color: #d4edda;
+    border-color: #155724;
+}
+
+.dark-mode p a {
+    color: #66bb6a;
+}
+
+.dark-mode .modal-content {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+}
+
+.dark-mode .modal h3 {
+    color: #66bb6a;
+}
+
+.dark-mode .modal label {
+    color: #ccc;
+}
+
+.dark-mode .modal input[type="number"] {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    color: #f5f5f5;
+}

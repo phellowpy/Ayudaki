@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Campanha - AyudaKI</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/criar-campanha.css">
+</head>
+<body>
+    <header class="home-header">
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="Logo AyudaKI" class="logo">
+            <h1>AyudaKI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="ver_campanhas.html">Ver Campanhas</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li id="nav-login"><a href="login.html" class="button">LOGIN</a></li>
+                <li id="nav-cadastro"><a href="cadastro.html" class="button">CADASTRE-SE</a></li>
+                <li id="nav-criar-campanha" style="display: none;"><a href="criar_campanha.html">Criar Campanha</a></li>
+                <li id="nav-minhas-campanhas" style="display: none;"><a href="campanhas_ong.html">Minhas Campanhas</a></li>
+                <li id="nav-dashboard-admin" style="display: none;"><a href="dashboard_admin.html">Dashboard Admin</a></li>
+                <li id="nav-logout" style="display: none;"><a href="#" id="logoutButton">Sair (<span id="loggedInUser"></span>)</a></li>
+                <li>
+                    <button id="themeToggle" class="button theme-toggle-button">
+                        <span class="light-icon">☀️</span>
+                        <span class="dark-icon" style="display:none;">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="criarCampanhaPage">
+        <h2>Criar Nova Campanha</h2>
+        <form id="criarCampanhaForm">
+            <div class="form-group">
+                <label for="titulo">Título da Campanha</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="meta">Meta de Arrecadação (R$)</label>
+                <input type="number" id="meta" name="meta" step="0.01" required>
+            </div>
+            <button type="submit" class="btn-primary">Criar Campanha</button>
+        </form>
+    </main>
+    <footer class="home-footer">
+        <div class="footer-content">
+            <p class="join-us-text">Se junte a nós!</p>
+            <div class="footer-links">
+                <div class="links-column">
+                    <a href="login.html">Entrar</a>
+                    <a href="../../index.html">Página Inicial</a>
+                </div>
+                <div class="links-column">
+                    <a href="#">Sobre nós</a>
+                    <a href="#">Contato</a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 | AyudaKI - Todos os direitos reservados</p>
+    </footer>
+    <script src="../js/db.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

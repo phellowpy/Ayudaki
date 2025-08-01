@@ -1,0 +1,156 @@
+/* front-end/css/cadastro.css */
+
+/* Estilos da página de cadastro para corresponder à imagem */
+body {
+    background-color: #fce2c0; /* Cor de fundo creme clara */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main.login-page {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.login-container {
+    background-color: #7b4f3b; /* Cor de fundo marrom */
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 500px;
+}
+
+.login-title {
+    color: #f7e0c4; /* Cor do texto "SEJA BEM-VINDO" */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.form-field {
+    margin-bottom: 2rem;
+}
+
+.form-field label {
+    display: block;
+    color: #f7e0c4; /* Cor do texto dos labels */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-field input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #f7e0c4; /* Linha de baixo para o input */
+    width: 100%;
+    padding: 0.5rem 0;
+    color: #fff; /* Cor do texto digitado */
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-field input::placeholder {
+    color: rgba(247, 224, 196, 0.7); /* Cor do texto do placeholder */
+}
+
+.form-field input:focus {
+    border-color: #f5a05b; /* Cor da linha quando o campo está focado */
+}
+
+.login-container p {
+    color: #f7e0c4; /* Cor do texto "Já tem uma conta?" */
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.login-container p a {
+    color: #5d9afb; /* Cor do link "Faça login" */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+.submit-button {
+    background-color: #a06e57; /* Cor do botão "CADASTRE-SE" */
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #8c5d4b;
+}
+
+/* Esconde o label e o input para o tipo de conta (ONG/Normal) */
+#cadastroForm select {
+    display: none;
+}
+#cadastroForm label[for="tipo"] {
+    display: none;
+}
+
+/* Ajustes para o tema escuro */
+body.dark-mode {
+    background-color: #333; /* Fundo mais escuro para o dark mode */
+}
+
+.dark-mode .login-container {
+    background-color: #5d4037; /* Marrom escuro no dark mode */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .login-title,
+.dark-mode .form-field label,
+.dark-mode .login-container p {
+    color: #f5f5f5;
+}
+
+.dark-mode .form-field input {
+    border-bottom: 2px solid #ccc;
+    color: #fff;
+}
+
+.dark-mode .form-field input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-mode .form-field input:focus {
+    border-color: #f5a05b;
+}
+
+.dark-mode .login-container p a {
+    color: #90caf9;
+}
+
+.dark-mode .submit-button {
+    background-color: #8a6c5e;
+    color: #eee;
+}
+
+.dark-mode .submit-button:hover {
+    background-color: #7a5d51;
+}
+
+/* Sobrescreve estilos globais do tema escuro para manter o design */
+.dark-mode header, .dark-mode footer {
+    background-color: #1a1a1a;
+    color: #eee;
+}

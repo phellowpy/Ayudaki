@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyudaKI - Plataforma de Doações e Campanhas Sociais</title>
+    <link rel="stylesheet" href="front-end/css/style.css">
+</head>
+<body>
+    <header class="home-header">
+        <div class="logo-container">
+            <img src="front-end/img/logo.png" alt="Logo AyudaKI" class="logo">
+            <h1>AyudaKI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="front-end/html/ver_campanhas.html">Ver Campanhas</a></li>
+                <li><a href="front-end/html/eventos.html">Eventos</a></li>
+                <li id="nav-login"><a href="front-end/html/login.html" class="button">LOGIN</a></li>
+                <li id="nav-cadastro"><a href="front-end/html/cadastro.html" class="button">CADASTRE-SE</a></li>
+                <li id="nav-criar-campanha" style="display: none;"><a href="front-end/html/criar_campanha.html">Criar Campanha</a></li>
+                <li id="nav-minhas-campanhas" style="display: none;"><a href="front-end/html/campanhas_ong.html">Minhas Campanhas</a></li>
+                <li id="nav-dashboard-admin" style="display: none;"><a href="front-end/html/dashboard_admin.html">Dashboard Admin</a></li>
+                <li id="nav-logout" style="display: none;"><a href="#" id="logoutButton">Sair (<span id="loggedInUser"></span>)</a></li>
+                <li>
+                    <button id="themeToggle" class="button theme-toggle-button">
+                        <span class="light-icon">☀️</span>
+                        <span class="dark-icon" style="display:none;">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-image">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="front-end/img/background.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+        <div class="hero-content">
+            <h2>AyudaKI: Conectando Quem Precisa a Quem Ajuda</h2>
+            <p>Doe, crie campanhas e faça a diferença na vida de pessoas e comunidades.</p>
+            <a href="front-end/html/ver_campanhas.html" class="button-doar">VER CAMPANHAS</a>
+        </div>
+    </div>
+
+           <section class="campaign-types">
+            <h3>AYUDAKI TE AJUDA COM TODO TIPO DE CAMPANHA</h3>
+            <div class="cards-container">
+                <div class="card-item">
+                    <img src="front-end/img/icon-criancas.png" alt="Ajuda com crianças">
+                    <p>Ajuda com crianças</p>
+                </div>
+                <div class="card-item">
+                    <img src="front-end/img/icon-pets.png" alt="Programas de adoções">
+                    <p>Programas de adoções</p>
+                </div>
+                <div class="card-item">
+                    <img src="front-end/img/icon-cesta-basica.png" alt="Vale cesta basica">
+                    <p>Vale cesta basica</p>
+                </div>
+                <div class="card-item">
+                    <img src="front-end/img/icon-roupas.png" alt="Doações de roupas">
+                    <p>Doações de roupas</p>
+                </div>
+            </div>
+        </section>
+
+    <section class="call-to-action">
+        <h3>Faça parte da nossa comunidade</h3>
+        <p>Junte-se a nós para transformar vidas e criar um impacto positivo.</p>
+        <a href="front-end/html/cadastro.html" class="button-cadastrar">CADASTRE-SE</a>
+    </section>
+
+    <footer class="home-footer">
+        <div class="footer-content">
+            <p class="join-us-text">Se junte a nós!</p>
+            <div class="footer-links">
+                <div class="links-column">
+                    <a href="front-end/html/login.html">Entrar</a>
+                    <a href="index.html">Página Inicial</a>
+                </div>
+                <div class="links-column">
+                    <a href="#">Sobre nós</a>
+                    <a href="#">Contato</a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 | AyudaKI - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="front-end/js/db.js"></script>
+    <script src="front-end/js/script.js"></script>
+</body>
+</html>

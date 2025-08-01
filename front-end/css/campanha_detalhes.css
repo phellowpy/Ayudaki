@@ -1,0 +1,163 @@
+/* front-end/css/campanha-detalhe.css */
+
+.campanha-detalhes-container {
+    padding: 40px;
+    background-color: #fce2c0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.campanha-detalhes-container h2 {
+    color: #a06e57;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.criador-info {
+    text-align: center;
+    font-style: italic;
+    color: #7b4f3b;
+    margin-bottom: 30px;
+}
+
+.descricao-campanha {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.progresso-container {
+    margin-bottom: 30px;
+}
+
+.progress-bar-container {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #7b4f3b;
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+#doacaoSection {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#doacaoSection h3 {
+    color: #a06e57;
+    margin-bottom: 20px;
+}
+
+#doacaoForm .form-group {
+    margin-bottom: 15px;
+}
+
+#doacaoForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #7b4f3b;
+}
+
+#doacaoForm input[type="number"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#doacaoForm .btn-primary {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+#qrcode-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#qrcode-container h4 {
+    color: #a06e57;
+    margin-bottom: 10px;
+}
+
+#qrcode-image {
+    border: 2px solid #a06e57;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.chave-pix {
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.qr-info {
+    font-style: italic;
+    color: #666;
+}
+
+/* Tema Escuro */
+body.dark-mode .campanha-detalhes-container {
+    background-color: #212121;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .campanha-detalhes-container h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .criador-info {
+    color: #bbb;
+}
+
+body.dark-mode .descricao-campanha {
+    color: #e0e0e0;
+}
+
+body.dark-mode #doacaoSection {
+    background-color: #333;
+    border-color: #444;
+}
+
+body.dark-mode #doacaoSection h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode #doacaoForm input[type="number"] {
+    background-color: #444;
+    border-color: #555;
+    color: #e0e0e0;
+}
+
+body.dark-mode #qrcode-container h4 {
+    color: #FFD54F;
+}
+
+body.dark-mode #qrcode-image {
+    border-color: #FFD54F;
+}
+
+body.dark-mode .chave-pix,
+body.dark-mode .qr-info {
+    color: #bbb;
+}

@@ -1,0 +1,111 @@
+.campanhas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.campanha-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer; /* Indica que o card é clicável */
+}
+
+.campanha-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.campanha-card h3 {
+    color: #4CAF50;
+    margin-top: 0;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.campanha-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 8px;
+    flex-grow: 1; /* Faz o parágrafo ocupar espaço e empurrar o botão para baixo */
+}
+
+.campanha-card p strong {
+    color: #333;
+}
+
+/* Esconde o botão "Doar" na listagem, ele será na página de detalhes */
+.campanha-card .doar-button {
+    display: none;
+}
+
+/* Botões específicos para a página de ONG (editar/excluir/retirar) */
+.campanha-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    align-self: flex-end; /* Alinha os botões no final do card */
+}
+
+.campanha-actions .button {
+    flex: 1; /* Faz com que os botões ocupem o espaço disponível igualmente */
+    min-width: 120px; /* Garante um tamanho mínimo para os botões */
+    margin-top: 0; /* Anula o margin-top do .button geral */
+}
+
+.edit-button {
+    background-color: #007bff; /* Azul */
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545; /* Vermelho */
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.retirar-button {
+    background-color: #ffc107; /* Amarelo */
+    color: #333;
+}
+
+.retirar-button:hover {
+    background-color: #e0a800;
+}
+
+/* --- Tema Escuro para Cards de Campanha --- */
+.dark-mode .campanha-card {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.dark-mode .campanha-card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.dark-mode .campanha-card h3 {
+    color: #66bb6a;
+}
+
+.dark-mode .campanha-card p {
+    color: #ccc;
+}
+
+.dark-mode .campanha-card p strong {
+    color: #ddd;
+}
