@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com');
-
-* {
-  font-family: "Caveat", cursive;
-}
-
 /* Estilos Gerais e Globais (Tema Claro) */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -205,7 +199,6 @@ body {
 /* Seção Chamada para Ação */
 .call-to-action {
     text-align: center;
-    margin-top: -100px;
     padding: 80px 20px;
     background-color: #fce2c0;
     color: #7b4f3b;
@@ -376,7 +369,18 @@ h2 {
     background-color: #c82333;
 }
 
-/* Estilos para formulários */
+/* Estilos para formulários (aplica a Login, Cadastro, Criar Campanha) */
+#loginPage,
+#cadastroPage,
+#criarCampanhaPage {
+    background-color: #fcebd7;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
 .form-field {
     margin-bottom: 20px;
 }
@@ -393,7 +397,8 @@ h2 {
 .form-field textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #d4c1a7;
+    background-color: #fef8f0;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 1rem;
@@ -426,26 +431,26 @@ h2 {
     border: 1px solid #c3e6cb;
 }
 
-/* --- TEMA ESCURO --- */
+/* --- TEMA ESCURO (NOVO!) --- */
 body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #333; /* Marrom escuro */
+    color: #e6e0d8; /* Cinza claro/bege para o texto */
 }
 
 .dark-mode .home-header {
-    background-color: #212121;
+    background-color: #382d27; /* Marrom escuro um pouco mais claro */
 }
 
 .dark-mode .home-header h1 {
-    color: #e0e0e0;
+    color: #e6e0d8;
 }
 
 .dark-mode .home-header nav a.button {
-    background-color: #424242;
+    background-color: #4a3e36;
 }
 
 .dark-mode .home-header nav a:hover {
-    background-color: #555;
+    background-color: #5d514a;
 }
 
 .dark-mode .theme-toggle-button {
@@ -457,66 +462,66 @@ body.dark-mode {
 }
 
 .dark-mode .campaign-types {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #261e1b;
+    color: #e6e0d8;
 }
 
 .dark-mode .campaign-types h3 {
-    color: #e0e0e0;
+    color: #e6e0d8;
 }
 
 .dark-mode .card-item img {
-    background-color: #333;
+    background-color: #4a3e36;
 }
 
 .dark-mode .card-item p {
-    color: #e0e0e0;
+    color: #e6e0d8;
 }
 
 .dark-mode .call-to-action {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #261e1b;
+    color: #e6e0d8;
 }
 
 .dark-mode .call-to-action h3 {
-    color: #e0e0e0;
+    color: #e6e0d8;
 }
 
 .dark-mode .button-doar,
 .dark-mode .button-cadastrar {
-    background-color: #424242;
-    color: #fff;
+    background-color: #4a3e36;
+    color: #e6e0d8;
 }
 
 .dark-mode .button-doar:hover,
 .dark-mode .button-cadastrar:hover {
-    background-color: #555;
+    background-color: #5d514a;
 }
 
 .dark-mode .home-footer {
-    background-color: #212121;
-    color: #bbb;
+    background-color: #382d27;
+    color: #e6e0d8;
 }
 
 .dark-mode .home-footer a {
-    color: #bbb;
+    color: #e6e0d8;
 }
 
 .dark-mode .campanhas-grid,
 .dark-mode .eventos-grid {
-    color: #e0e0e0;
+    color: #e6e0d8;
 }
 
 .dark-mode .card-campanha,
 .dark-mode .card-evento {
-    background-color: #333;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    background-color: #42352e; /* Marrom escuro mais claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .dark-mode .card-campanha:hover,
 .dark-mode .card-evento:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .dark-mode .card-campanha h3,
@@ -526,24 +531,31 @@ body.dark-mode {
 
 .dark-mode .btn,
 .dark-mode .btn-primary {
-    background-color: #424242;
+    background-color: #4a3e36;
 }
 
 .dark-mode .btn:hover,
 .dark-mode .btn-primary:hover {
-    background-color: #555;
+    background-color: #5d514a;
+}
+
+.dark-mode #loginPage,
+.dark-mode #cadastroPage,
+.dark-mode #criarCampanhaPage {
+    background-color: #42352e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .dark-mode .form-field label {
-    color: #e0e0e0;
+    color: #e6e0d8;
 }
 
 .dark-mode .form-field input,
 .dark-mode .form-field select,
 .dark-mode .form-field textarea {
-    background-color: #333;
-    border-color: #444;
-    color: #e0e0e0;
+    background-color: #42352e;
+    border-color: #7b6a5d;
+    color: #e6e0d8;
 }
 
 /* Responsividade */
