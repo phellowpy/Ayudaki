@@ -117,10 +117,15 @@ O projeto é composto por diversas páginas, cada uma com uma função específi
 ---
 
 ## Tecnologias Utilizadas
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PYTHON](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 - **HTML5:** Estrutura e semântica das páginas.
 - **CSS3:** Estilização, layout e design.
-- **JavaScript (ES6+):** Lógica de negócios, manipulação do DOM e interatividade.
+- **JavaScript:** Lógica de negócios, manipulação do DOM e interatividade.
+- **Python:** Simulação da lógica do sistema se tivesse back-end.
 - **`db.js`:** Simulação de um banco de dados local para persistência de dados no navegador.
 
 ---
