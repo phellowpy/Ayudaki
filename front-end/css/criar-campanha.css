@@ -1,8 +1,6 @@
-/* front-end/css/criar-campanha.css */
-
 #criarCampanhaPage {
     padding: 40px;
-    background-color: #fce2c0;
+    background-color: #7b4f3b;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
@@ -10,7 +8,7 @@
 }
 
 #criarCampanhaPage h2 {
-    color: #a06e57;
+    color: #f7e0c4;
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.2rem;
@@ -24,33 +22,42 @@
     display: block;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #7b4f3b;
+    color: #f7e0c4;
 }
 
 #criarCampanhaForm input[type="text"],
 #criarCampanhaForm input[type="number"],
 #criarCampanhaForm textarea {
+    background-color: #7b4f3b;
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #7b4f3b;
+    border-bottom: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    box-sizing: border-box;
     font-size: 1rem;
-    background-color: #fff;
-    color: #333;
+    color: #ffffff;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Comic Relief", system-ui;
+}
+
+#criarCampanhaForm input[type="text"]::placeholder,
+#criarCampanhaForm input[type="number"]::placeholder,
+#criarCampanhaForm textarea::placeholder {
+    color: #f7e0c4;
 }
 
 #criarCampanhaForm input[type="text"]:focus,
 #criarCampanhaForm input[type="number"]:focus,
 #criarCampanhaForm textarea:focus {
-    border-color: #a06e57;
-    box-shadow: 0 0 5px rgba(160, 110, 87, 0.5);
+    border-bottom-color: #f5a05b;
+    color: #ffffff;
     outline: none;
+    font-family: "Comic Relief", system-ui;
 }
 
 #criarCampanhaForm textarea {
-    resize: vertical; /* Permite redimensionar apenas na vertical */
+    resize: vertical;
     min-height: 150px;
 }
 
@@ -72,9 +79,10 @@
     background-color: #7b4f3b;
 }
 
-/* Estilos de Tema Escuro */
+/* TODO: Tema Escuro */
+
 body.dark-mode #criarCampanhaPage {
-    background-color: #212121;
+    background-color: #42352e;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
@@ -89,16 +97,22 @@ body.dark-mode #criarCampanhaForm label {
 body.dark-mode #criarCampanhaForm input[type="text"],
 body.dark-mode #criarCampanhaForm input[type="number"],
 body.dark-mode #criarCampanhaForm textarea {
-    background-color: #333;
-    border-color: #444;
+    background-color: #42352e;
+    border-color: #42352e;
+    border-bottom: 2px solid #ccc;
     color: #e0e0e0;
 }
 
 body.dark-mode #criarCampanhaForm input[type="text"]:focus,
 body.dark-mode #criarCampanhaForm input[type="number"]:focus,
 body.dark-mode #criarCampanhaForm textarea:focus {
-    border-color: #FFD54F;
-    box-shadow: 0 0 5px rgba(255, 213, 79, 0.5);
+    border-bottom-color: #FFD54F;
+}
+
+body.dark-mode #criarCampanhaForm input[type="text"]::placeholder,
+body.dark-mode #criarCampanhaForm input[type="number"]::placeholder,
+body.dark-mode #criarCampanhaForm textarea::placeholder {
+    color: #ffffff;
 }
 
 body.dark-mode #criarCampanhaForm .btn-primary {

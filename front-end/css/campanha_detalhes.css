@@ -1,8 +1,6 @@
-/* front-end/css/campanha-detalhe.css */
-
 .campanha-detalhes-container {
     padding: 40px;
-    background-color: #fce2c0;
+    background-color: #fffbf6;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
@@ -116,7 +114,7 @@
     color: #666;
 }
 
-/* Tema Escuro */
+/* TODO: Tema Escuro */
 body.dark-mode .campanha-detalhes-container {
     background-color: #212121;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);

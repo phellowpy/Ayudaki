@@ -1,3 +1,7 @@
+// 1. Admin: e-mail: admin@doacoes.com, senha: 123
+// 2. Usuário Normal: e-mail: joao@email.com, senha: abc
+// 3. ONG: e-mail: ong@doacoes.com, senha: xyz
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Configuração do Tema ---

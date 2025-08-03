@@ -1,15 +1,15 @@
-/* Estilos Gerais e Globais (Tema Claro) */
+@import url('https://fonts.googleapis.com/');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Comic Relief", system-ui;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #fce2c0;
+    background-color: #ffebe4;
     color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Header */
 .home-header {
     background-color: #a06e57;
     color: #fff;
@@ -51,7 +51,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 15px;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -83,7 +83,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Hero Section (com vídeo de fundo) */
 .hero-image {
     height: 60vh;
     display: flex;
@@ -151,7 +150,6 @@ body {
     background-color: #7b4f3b;
 }
 
-/* Seção Tipos de Campanhas */
 .campaign-types {
     text-align: center;
     padding: 50px 20px;
@@ -196,7 +194,6 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Seção Chamada para Ação */
 .call-to-action {
     text-align: center;
     padding: 80px 20px;
@@ -231,7 +228,6 @@ body {
     background-color: #7b4f3b;
 }
 
-/* Footer */
 .home-footer {
     background-color: #7b4f3b;
     color: #fff;
@@ -279,12 +275,11 @@ body {
     text-decoration: underline;
 }
 
-.copyright {
+copyright {
     font-size: 0.9rem;
     margin-top: 20px;
 }
 
-/* Estilos para páginas internas */
 main {
     padding: 20px;
     max-width: 1200px;
@@ -369,7 +364,6 @@ h2 {
     background-color: #c82333;
 }
 
-/* Estilos para formulários (aplica a Login, Cadastro, Criar Campanha) */
 #loginPage,
 #cadastroPage,
 #criarCampanhaPage {
@@ -431,14 +425,15 @@ h2 {
     border: 1px solid #c3e6cb;
 }
 
-/* --- TEMA ESCURO (NOVO!) --- */
+/* TODO: Tema Escuro */
+
 body.dark-mode {
-    background-color: #333; /* Marrom escuro */
-    color: #e6e0d8; /* Cinza claro/bege para o texto */
+    background-color: #333;
+    color: #e6e0d8;
 }
 
 .dark-mode .home-header {
-    background-color: #382d27; /* Marrom escuro um pouco mais claro */
+    background-color: #382d27;
 }
 
 .dark-mode .home-header h1 {
@@ -514,7 +509,7 @@ body.dark-mode {
 
 .dark-mode .card-campanha,
 .dark-mode .card-evento {
-    background-color: #42352e; /* Marrom escuro mais claro */
+    background-color: #42352e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -558,43 +553,52 @@ body.dark-mode {
     color: #e6e0d8;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .home-header nav ul {
         gap: 10px;
     }
+
     .home-header nav a {
         font-size: 1rem;
         padding: 8px 12px;
     }
+
     .hero-content h2 {
         font-size: 2.5rem;
     }
+
     .hero-content p {
         font-size: 1rem;
     }
+
     .button-doar {
         font-size: 1rem;
         padding: 12px 25px;
     }
+
     .campaign-types h3 {
         font-size: 1.5rem;
     }
+
     .cards-container {
         flex-direction: column;
         align-items: center;
     }
+
     .call-to-action h3 {
         font-size: 1.8rem;
     }
+
     .footer-links {
         flex-direction: row;
         gap: 30px;
     }
+
     .campanhas-grid,
     .eventos-grid {
         grid-template-columns: 1fr;
     }
+
     h2 {
         font-size: 2rem;
     }

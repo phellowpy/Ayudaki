@@ -1,84 +1,81 @@
-/* front-end/css/contato.css */
-
 .contato-container {
-      width: 500px;
-      margin: 40px auto;
-      padding: 40px;
-      background-color: #fcebd7;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contato-container .titulo-pagina {
-      color: #a06e57;
-      margin-bottom: 10px;
-  }
-  
-  .contato-container .subtitulo-pagina {
-      text-align: center;
-      color: #7b4f3b;
-      margin-bottom: 30px;
-      font-size: 1.1rem;
-  }
-  
-  #contatoForm {
-      margin-bottom: 40px;
-  }
-  
-  /* Estilo para os campos de entrada do formulário de contato */
-  #contatoForm .form-field input,
-  #contatoForm .form-field textarea {
-      background-color: #fef8f0;
-      border: 1px solid #d4c1a7;
-      transition: border-color 0.3s;
-  }
-  
-  #contatoForm .form-field input:focus,
-  #contatoForm .form-field textarea:focus {
-      border-color: #a06e57;
-  }
-  
-  .info-contato {
-      text-align: center;
-      color: #333;
-  }
-  
-  .info-contato h3 {
-      color: #a06e57;
-      margin-bottom: 15px;
-  }
-  
-  .info-contato p {
-      font-size: 1rem;
-      margin: 5px 0;
-  }
-  
-  /* Estilos para o modo escuro (NOVO!) */
-  body.dark-mode .contato-container {
-      background-color: #42352e; /* Marrom escuro para o formulário */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  body.dark-mode .contato-container .titulo-pagina {
-      color: #e6e0d8;
-  }
-  
-  body.dark-mode .contato-container .subtitulo-pagina {
-      color: #e6e0d8;
-  }
-  
-  body.dark-mode .info-contato {
-      color: #e6e0d8;
-  }
-  
-  body.dark-mode .info-contato h3 {
-      color: #e6e0d8;
-  }
-  
-  /* Estilo para os campos de entrada no modo escuro */
-  body.dark-mode #contatoForm .form-field input,
-  body.dark-mode #contatoForm .form-field textarea {
-      background-color: #54463d;
-      border-color: #7b6a5d;
-      color: #e6e0d8;
-  }
+    width: 500px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fcebd7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-container .titulo-pagina {
+    color: #a06e57;
+    margin-bottom: 10px;
+}
+
+.contato-container .subtitulo-pagina {
+    text-align: center;
+    color: #7b4f3b;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+#contatoForm {
+    margin-bottom: 40px;
+}
+
+#contatoForm .form-field input,
+#contatoForm .form-field textarea {
+    background-color: #fef8f0;
+    border: 1px solid #d4c1a7;
+    transition: border-color 0.3s;
+}
+
+#contatoForm .form-field input:focus,
+#contatoForm .form-field textarea:focus {
+    border-color: #a06e57;
+}
+
+.info-contato {
+    text-align: center;
+    color: #333;
+}
+
+.info-contato h3 {
+    color: #a06e57;
+    margin-bottom: 15px;
+}
+
+.info-contato p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* TODO: Tema Escuro */
+
+body.dark-mode .contato-container {
+    background-color: #42352e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .contato-container .titulo-pagina {
+    color: #e6e0d8;
+}
+
+body.dark-mode .contato-container .subtitulo-pagina {
+    color: #e6e0d8;
+}
+
+body.dark-mode .info-contato {
+    color: #e6e0d8;
+}
+
+body.dark-mode .info-contato h3 {
+    color: #e6e0d8;
+}
+
+body.dark-mode #contatoForm .form-field input,
+body.dark-mode #contatoForm .form-field textarea {
+    background-color: #54463d;
+    border-color: #7b6a5d;
+    color: #e6e0d8;
+}

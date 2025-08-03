@@ -1,8 +1,4 @@
-/* front-end/css/login.css */
-
-/* Estilos da página de login para corresponder à imagem */
 body {
-    background-color: #fce2c0; /* Cor de fundo creme clara */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -17,7 +13,7 @@ main.login-page {
 }
 
 .login-container {
-    background-color: #7b4f3b; /* Cor de fundo marrom */
+    background-color: #7b4f3b;
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -25,7 +21,7 @@ main.login-page {
 }
 
 .login-title {
-    color: #f7e0c4; /* Cor do texto "SEJA BEM-VINDO" */
+    color: #f7e0c4;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
@@ -38,7 +34,7 @@ main.login-page {
 
 .form-field label {
     display: block;
-    color: #f7e0c4; /* Cor do texto dos labels */
+    color: #f7e0c4;
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
@@ -47,32 +43,32 @@ main.login-page {
 .form-field input {
     background: none;
     border: none;
-    border-bottom: 2px solid #f7e0c4; /* Linha de baixo para o input */
+    border-bottom: 2px solid #f7e0c4;
     width: 100%;
     padding: 0.5rem 0;
-    color: #fff; /* Cor do texto digitado */
+    color: #fff;
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s ease;
 }
 
 .form-field input::placeholder {
-    color: rgba(247, 224, 196, 0.7); /* Cor do texto do placeholder */
+    color: rgba(247, 224, 196, 0.7);
 }
 
 .form-field input:focus {
-    border-color: #f5a05b; /* Cor da linha quando o campo está focado */
+    border-color: #f5a05b;
 }
 
 .login-container p {
-    color: #f7e0c4; /* Cor do texto "Não tem conta?" */
+    color: #f7e0c4;
     text-align: center;
     font-size: 1rem;
     margin-top: 1rem;
 }
 
 .login-container p a {
-    color: #5d9afb; /* Cor do link "Cadastre-se" */
+    color: #5d9afb;
     text-decoration: none;
     font-weight: bold;
 }
@@ -82,7 +78,7 @@ main.login-page {
 }
 
 .submit-button {
-    background-color: #a06e57; /* Cor do botão "ENTRAR" */
+    background-color: #a06e57;
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
@@ -99,7 +95,8 @@ main.login-page {
     background-color: #8c5d4b;
 }
 
-/* Ajustes para o tema escuro */
+/* TODO: Tema Escuro */
+
 body.dark-mode {
     background-color: #333;
 }
@@ -141,7 +138,6 @@ body.dark-mode {
     background-color: #7a5d51;
 }
 
-/* Sobrescreve estilos globais do tema escuro para manter o design */
 .dark-mode header, .dark-mode footer {
     background-color: #1a1a1a;
     color: #eee;

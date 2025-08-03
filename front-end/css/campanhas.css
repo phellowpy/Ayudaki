@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    cursor: pointer; /* Indica que o card é clicável */
+    cursor: pointer;
 }
 
 .campanha-card:hover {
@@ -35,35 +35,33 @@
     line-height: 1.6;
     color: #555;
     margin-bottom: 8px;
-    flex-grow: 1; /* Faz o parágrafo ocupar espaço e empurrar o botão para baixo */
+    flex-grow: 1;
 }
 
 .campanha-card p strong {
     color: #333;
 }
 
-/* Esconde o botão "Doar" na listagem, ele será na página de detalhes */
 .campanha-card .doar-button {
     display: none;
 }
 
-/* Botões específicos para a página de ONG (editar/excluir/retirar) */
 .campanha-actions {
     display: flex;
     gap: 10px;
     margin-top: 20px;
     flex-wrap: wrap;
-    align-self: flex-end; /* Alinha os botões no final do card */
+    align-self: flex-end;
 }
 
 .campanha-actions .button {
-    flex: 1; /* Faz com que os botões ocupem o espaço disponível igualmente */
-    min-width: 120px; /* Garante um tamanho mínimo para os botões */
-    margin-top: 0; /* Anula o margin-top do .button geral */
+    flex: 1;
+    min-width: 120px;
+    margin-top: 0;
 }
 
 .edit-button {
-    background-color: #007bff; /* Azul */
+    background-color: #007bff;
 }
 
 .edit-button:hover {
@@ -71,7 +69,7 @@
 }
 
 .delete-button {
-    background-color: #dc3545; /* Vermelho */
+    background-color: #dc3545;
 }
 
 .delete-button:hover {
@@ -79,7 +77,7 @@
 }
 
 .retirar-button {
-    background-color: #ffc107; /* Amarelo */
+    background-color: #ffc107;
     color: #333;
 }
 
@@ -87,7 +85,8 @@
     background-color: #e0a800;
 }
 
-/* --- Tema Escuro para Cards de Campanha --- */
+/* TODO: Tema Escuro */
+
 .dark-mode .campanha-card {
     background-color: #2b2b2b;
     border: 1px solid #444;
