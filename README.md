@@ -66,7 +66,7 @@ AyudaKI [GITHUB]/
 
 ## Páginas e Funcionalidades
 
-O projeto é composto por diversas páginas, cada uma com uma função específica dentro do sistema.
+O projeto é composto por diversas páginas, cada uma com uma função específica dentro do sistema. Você pode conferir o sistema de banco de dados nesse [link](https://app.dynobird.com/?action=open&id=436751bf-5006-4b72-9c2c-87471fe1d06f)
 
 ### `index.html` (Página Inicial)
 - **Descrição:** Ponto de entrada da aplicação. Serve como a página de boas-vindas e introdução ao projeto.
