@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const navLogin = document.getElementById('nav-login');
         const navCadastro = document.getElementById('nav-cadastro');
         const navLogout = document.getElementById('nav-logout');
+        const navPerfil = document.getElementById('nav-perfil'); // Referência ao novo link de Perfil
         const navCriarCampanha = document.getElementById('nav-criar-campanha');
         const navMinhasCampanhas = document.getElementById('nav-minhas-campanhas');
         const navDashboardAdmin = document.getElementById('nav-dashboard-admin');
@@ -80,6 +81,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (navLogin) navLogin.style.display = isLoggedIn ? 'none' : 'block';
         if (navCadastro) navCadastro.style.display = isLoggedIn ? 'none' : 'block';
         if (navLogout) navLogout.style.display = isLoggedIn ? 'block' : 'none';
+        
+        // CORREÇÃO: Lógica para exibir o item de menu "Perfil" quando o usuário estiver logado
+        if (navPerfil) navPerfil.style.display = isLoggedIn ? 'block' : 'none';
         
         if (navCriarCampanha) navCriarCampanha.style.display = (isLoggedIn && userType === 'ong') ? 'block' : 'none';
         if (navMinhasCampanhas) navMinhasCampanhas.style.display = (isLoggedIn && userType === 'ong') ? 'block' : 'none';
@@ -90,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loggedInUserSpan.textContent = userName;
         }
     };
+    window.updateHeader = updateHeader; // Torna a função global para ser chamada do perfil.js
     
     // --- Lógica do Logout ---
     const logoutButton = document.getElementById('logoutButton');
@@ -152,6 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 nome: cadastroForm.nome.value,
                 telefone: cadastroForm.telefone.value,
                 tipo: 'normal',
+                foto: '../../img/default-profile.png'
             };
 
             window.db.contas.push(novaConta);
@@ -327,27 +333,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         return;
                     }
                     
-                    // Lógica para simular a criação do QR Code Pix
-                    // Aqui, usaremos uma imagem genérica e uma chave de exemplo.
                     const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=ChavePix-doacao-${valor}`;
-                    const chavePix = `doacao-${campanha.id}@ayudaki.com`; // Chave Pix de exemplo
+                    const chavePix = `doacao-${campanha.id}@ayudaki.com`;
                     
                     document.getElementById('qrcode-image').src = qrCodeUrl;
                     document.getElementById('chavePix').textContent = chavePix;
                     document.getElementById('qrcode-container').style.display = 'block';
-
-                    // Oculta o formulário após gerar o QR Code para evitar múltiplas doações
-                    // doacaoForm.style.display = 'none';
-                    
-                    // Exibir mensagem de doação
                     showMessage('doacaoMessage', 'QR Code gerado com sucesso! Após a doação, a campanha será atualizada.', 'success');
 
-                    // Simulamos a doação após um tempo (ex: 10 segundos) para simular o pagamento real.
                     setTimeout(() => {
                         campanha.arrecadado += valor;
                         alert(`Doação de R$ ${valor.toFixed(2)} para "${campanha.nome}" registrada com sucesso!`);
                         window.location.reload();
-                    }, 10000); // 10 segundos para recarregar
+                    }, 10000);
                 });
             }
         }

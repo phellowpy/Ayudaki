@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - AyudaKI</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+</head>
+<body>
+
+    <header class="home-header">
+        <div class="logo-container">
+            <img src="../../img/logo.png" alt="Logo AyudaKI" class="logo">
+            <h1>AyudaKI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="ver_campanhas.html">Ver Campanhas</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li id="nav-perfil" style="display: none;"><a href="perfil.html">Perfil</a></li>
+                <li id="nav-criar-campanha" style="display: none;"><a href="criar_campanha.html">Criar Campanha</a></li>
+                <li id="nav-minhas-campanhas" style="display: none;"><a href="campanhas_ong.html">Minhas Campanhas</a></li>
+                <li id="nav-dashboard-admin" style="display: none;"><a href="dashboard_admin.html">Dashboard Admin</a></li>
+                <li id="nav-login"><a href="login.html" class="button">LOGIN</a></li>
+                <li id="nav-cadastro"><a href="cadastro.html" class="button">CADASTRE-SE</a></li>
+                <li id="nav-logout" style="display: none;"><a href="#" id="logoutButton">Sair (<span id="loggedInUser"></span>)</a></li>
+                <li>
+                    <button id="themeToggle" class="button theme-toggle-button">
+                        <span class="light-icon">☀️</span>
+                        <span class="dark-icon" style="display:none;">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="perfilPage" class="profile-container">
+            <h2 class="profile-title">Meu Perfil</h2>
+            
+            <div class="profile-photo-area">
+                <img id="profile-pic" src="../../img/default-profile.png" alt="Foto de Perfil" class="profile-pic">
+                <input type="file" id="photo-upload" class="photo-upload" accept="image/*" disabled>
+                <button type="button" id="edit-photo-btn" class="btn btn-secondary">Alterar Foto</button>
+            </div>
+
+            <form id="perfilForm">
+                <div class="profile-field">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo" disabled>
+                </div>
+                <div class="profile-field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="nome@exemplo.com" disabled>
+                </div>
+                <div class="profile-field">
+                    <label for="tipoConta">Tipo de Conta:</label>
+                    <input type="text" id="tipoConta" name="tipoConta" disabled>
+                </div>
+                <div class="profile-field">
+                    <label>Senha:</label>
+                    <button type="button" id="change-password-btn" class="btn btn-secondary">Alterar Senha</button>
+                </div>
+            </form>
+
+            <div class="profile-actions">
+                <button type="button" id="edit-btn" class="btn btn-primary">Editar</button>
+                <button type="button" id="save-btn" class="btn btn-primary" style="display: none;">Salvar</button>
+                <button type="button" id="cancel-btn" class="btn btn-secondary" style="display: none;">Cancelar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="home-footer">
+        <div class="footer-content">
+            <p class="join-us-text">Se junte a nós!</p>
+            <div class="footer-links">
+                <div class="links-column">
+                    <a href="login.html">Entrar</a>
+                    <a href="../../index.html">Página Inicial</a>
+                </div>
+                <div class="links-column">
+                    <a href="#">Sobre nós</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 | AyudaKI - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="../js/db.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/perfil.js"></script>
+</body>
+</html>
