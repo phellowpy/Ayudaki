@@ -1,6 +1,6 @@
 /* Estilos específicos para a página de Perfil */
 #perfilPage.profile-container {
-      background-color: #fff;
+      background-color: #ffe9df;
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -13,7 +13,7 @@
       font-weight: bold;
       font-size: 2rem;
       margin-bottom: 30px;
-      color: #3f51b5;
+      color: #7b4f3b;
   }
   
   .profile-photo-area {
@@ -25,7 +25,7 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #3f51b5;
+      border: 3px solid #7b4f3b;
       margin-bottom: 15px;
   }
   
@@ -58,7 +58,7 @@
   
   .profile-field input:focus,
   .profile-field textarea:focus {
-      border-color: #3f51b5;
+      border-color: #7b4f3b;
       outline: none;
   }
   
@@ -86,17 +86,17 @@
   }
   
   .btn-primary {
-      background-color: #3f51b5;
+      background-color: #7b4f3b;
       color: #fff;
   }
   
   .btn-primary:hover {
-      background-color: #303f9f;
+      background-color: #7b4f3b;
   }
   
   .btn-secondary {
-      background-color: #ccc;
-      color: #333;
+      background-color: #7b4f3b;
+      color: #fff;
   }
   
   .btn-secondary:hover {
@@ -131,5 +131,5 @@
   }
   
   .dark-mode .profile-pic {
-      border-color: #4a66a8;
+      border-color: #7b4f3b;
   }
