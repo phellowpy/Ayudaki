@@ -43,6 +43,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -51,11 +52,20 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    align-items: center;
+    display: flex;
     font-size: 15px;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    ion-icon {
+        margin-right: 5px;
+      }
 }
+
+span ion-icon {
+    color: #FFD54F;
+  }
 
 .home-header nav a.button {
     background-color: #7b4f3b;

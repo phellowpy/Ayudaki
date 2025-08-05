@@ -6,6 +6,8 @@
     <title>Contato - AyudaKI</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contato.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header class="home-header">
@@ -15,19 +17,20 @@
         </div>
         <nav>
             <ul>
-                <li><a href="../../index.html">Início</a></li>
-                <li><a href="ver_campanhas.html">Ver Campanhas</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li id="nav-login"><a href="login.html" class="button">LOGIN</a></li>
-                <li id="nav-cadastro"><a href="cadastro.html" class="button">CADASTRE-SE</a></li>
-                <li id="nav-criar-campanha" style="display: none;"><a href="criar_campanha.html">Criar Campanha</a></li>
-                <li id="nav-minhas-campanhas" style="display: none;"><a href="campanhas_ong.html">Minhas Campanhas</a></li>
-                <li id="nav-dashboard-admin" style="display: none;"><a href="dashboard_admin.html">Dashboard Admin</a></li>
-                <li id="nav-logout" style="display: none;"><a href="#" id="logoutButton">Sair (<span id="loggedInUser"></span>)</a></li>
+                <li><a href="../../index.html"><ion-icon name="home-outline"></ion-icon>Início</a></li>
+                <li><a href="ver_campanhas.html"><ion-icon name="podium-outline"></ion-icon>Ver Campanhas</a></li>
+                <li><a href="eventos.html"><ion-icon name="newspaper-outline"></ion-icon>Eventos</a></li>
+                <li id="nav-criar-campanha" style="display: none;"><a href="criar_campanha.html"><ion-icon name="duplicate-outline"></ion-icon>Criar Campanha</a></li>
+                <li id="nav-minhas-campanhas" style="display: none;"><a href="campanhas_ong.html"><ion-icon name="albums-outline"></ion-icon>Minhas Campanhas</a></li>
+                <li id="nav-dashboard-admin" style="display: none;"><a href="dashboard_admin.html"><ion-icon name="file-tray-stacked-outline"></ion-icon>Dashboard Admin</a></li>
+                <li id="nav-perfil" style="display: none;"><a href="perfil.html"><ion-icon name="person-outline"></ion-icon>Perfil</a></li>
+                <li id="nav-login"><a href="login.html" class="button"><ion-icon name="key-outline"></ion-icon>LOGIN</a></li>
+                <li id="nav-cadastro"><a href="cadastro.html" class="button"><ion-icon name="person-add-outline"></ion-icon>CADASTRE-SE</a></li>
+                <li id="nav-logout" style="display: none;"><a href="#" id="logoutButton"><ion-icon name="person-remove-outline"></ion-icon>Sair (<span id="loggedInUser"></span>)</a></li>
                 <li>
                     <button id="themeToggle" class="button theme-toggle-button">
-                        <span class="light-icon">☀️</span>
-                        <span class="dark-icon" style="display:none;">🌙</span>
+                        <span class="light-icon" style="color: #FFD54F;"><ion-icon name="sunny-outline"></ion-icon></span>
+                        <span class="dark-icon" style="display:none;"><ion-icon name="moon-outline"></ion-icon></span>
                     </button>
                 </li>
             </ul>
