@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.imgur.com/example.gif" width="400" height="300">
+  <img src="front-end/img/logo-readme.gif" width="400" height="300">
 </div>
 
 # AyudaKI - Plataforma de Doações e Eventos
