@@ -37,6 +37,7 @@ AyudaKI [GITHUB]/
 │   │   ├── criar_campanha.css
 │   │   ├── dark-mode.css
 │   │   ├── login.css
+│   │   ├── perfil.css
 │   │   └── style.css
 │   ├── html/               # Todas as páginas HTML do sistema
 │   │   ├── cadastro.html
@@ -47,9 +48,11 @@ AyudaKI [GITHUB]/
 │   │   ├── dashboard_admin.html
 │   │   ├── eventos.html
 │   │   ├── login.html
+│   │   ├── perfil.html
 │   │   └── ver_campanhas.html
 │   ├── img/                
 │   │   ├── background.mp4
+│   │   ├── default-profile.png
 │   │   ├── icon-cesta-basica.png
 │   │   ├── icon-criancas.png
 │   │   ├── icon-pets.png
