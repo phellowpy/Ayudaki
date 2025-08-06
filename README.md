@@ -134,7 +134,7 @@ O projeto é composto por diversas páginas, cada uma com uma função específi
 ---
 
 <div align="center">
-  <img src="cat.gif" style="border-radius: 20px;" width="200" height="200">
+  <img src="front-end/img/cat.gif" style="border-radius: 20px;" width="200" height="200">
 </div>
 
 ## Agradecimentos...
