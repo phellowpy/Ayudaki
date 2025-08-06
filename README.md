@@ -132,3 +132,13 @@ O projeto é composto por diversas páginas, cada uma com uma função específi
 - **`db.js`:** Simulação de um banco de dados local para persistência de dados no navegador.
 
 ---
+
+<div align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjZwY3JhZHM1NndlZWZpNnFjNHRxZXpranZhdG85MGRmcjdoeGxieSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiQygY6HW1GjoYKFq/giphy.gif" style="border-radius: 20%;" width="200" height="200">
+</div>
+
+## Agradecimentos...
+
+- Meu caro amigo Daniel que parasitou meu trabalho e me ajudou na parte mais dificil... a mais impossivel de todas... o gif do readME. 👌
+
+---
