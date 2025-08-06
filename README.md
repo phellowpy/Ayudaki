@@ -1,8 +1,8 @@
 <div align="center">
-  ![GIF de um gato dançando](https://i.imgur.com/057pX.gif)
+  [GIF de um gato dançando](https://i.imgur.com/057pX.gif)
 </div>
 
-<img src="https://i.imgur.com/example.gif" width="400" height="300">
+
 
 # AyudaKI - Plataforma de Doações e Eventos
 
