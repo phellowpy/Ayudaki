@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="front-end/img/logo.png" alt="Texto Alternativo" width="200px" height="200px">
+  <img src="front-end/img/logo-readme.gif" alt="Texto Alternativo" width="200px" height="200px">
 </div>
 
 # AyudaKI - Plataforma de Doações e Eventos
