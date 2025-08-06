@@ -1,6 +1,8 @@
 <div align="center">
-  <img src="front-end/img/logo-readme.gif" alt="Texto Alternativo" width="200px" height="200px">
+  ![GIF de um gato dançando](https://i.imgur.com/057pX.gif)
 </div>
+
+<img src="https://i.imgur.com/example.gif" width="400" height="300">
 
 # AyudaKI - Plataforma de Doações e Eventos
 
