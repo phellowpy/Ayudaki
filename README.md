@@ -134,7 +134,7 @@ O projeto é composto por diversas páginas, cada uma com uma função específi
 ---
 
 <div align="center">
-  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjZwY3JhZHM1NndlZWZpNnFjNHRxZXpranZhdG85MGRmcjdoeGxieSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiQygY6HW1GjoYKFq/giphy.gif" style="border-radius: 20%;" width="200" height="200">
+  <img src="cat.gif" style="border-radius: 20px;" width="200" height="200">
 </div>
 
 ## Agradecimentos...
