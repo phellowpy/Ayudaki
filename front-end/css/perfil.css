@@ -1,4 +1,3 @@
-/* Estilos específicos para a página de Perfil */
 #perfilPage.profile-container {
       background-color: #ffe9df;
       padding: 40px;
@@ -132,4 +131,5 @@
   
   .dark-mode .profile-pic {
       border-color: #7b4f3b;
+
   }
