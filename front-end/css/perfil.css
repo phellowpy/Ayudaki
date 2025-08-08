@@ -102,7 +102,8 @@
       background-color: #bbb;
   }
   
-  /* Tema escuro */
+/* TODO: Tema Escuro */
+
   .dark-mode #perfilPage.profile-container {
       background-color: #2c2c2c;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -133,3 +134,4 @@
       border-color: #7b4f3b;
 
   }
+
